@@ -6,11 +6,10 @@ import java.net.URL
 import java.util.*
 
 class Weather {
-    // 0964ae2c8b39bf3820afdb03249d0b6e
     companion object {
         @Throws(IOException::class)
         fun getWeather(message: String, model: Model): String {
-            val url = URL("http://api.openweathermap.org/data/2.5/weather?q=$message&units=metric&appid=0964ae2c8b39bf3820afdb03249d0b6e")
+            val url = URL("")
 
             val input = Scanner(url.content as InputStream)
             var result = ""

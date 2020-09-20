@@ -17,30 +17,31 @@ import javax.imageio.ImageIO
 object Opp {
 
     private val addressID = mapOf(
-            "Большая Ордынка, дом 47/7" to 0,
-            "Большая Переяславская, дом 50, стр. 1" to 1,
-            "Пионерская улица, дом 12/4" to 2,
-            "Басманная улица, дом 21/4, стр. 6, 2 этаж" to 3,
-            "Большой Трехсвятительский переулок, дом 3" to 4,
-            "Малый Трехсвятительский переулок, дом 8/2, стр. 1" to 5,
-            "Хитровский переулок, дом 2/8, стр. 5" to 6,
-            "Шаболовка, дом 28/11, стр.2" to 7,
-            "Шаболовка, дом 26, стр. 4" to 8
+            "Большая Ордынка, дом 47/7" to 0, // DONE
+            "Большая Переяславская, дом 50, стр. 1" to 1, // DONE
+            "Пионерская улица, дом 12/4" to 2, // DONE
+            "Басманная улица, дом 21/4, стр. 6, 2 этаж" to 3, // DONE
+            "Большой Трехсвятительский переулок, дом 3" to 4, // DONE
+            "Малый Трехсвятительский переулок, дом 8/2, стр. 1" to 5, //DONE
+            "Хитровский переулок, дом 2/8, стр. 5" to 6, // DONE
+            "Шаболовка, дом 28/11, стр.2" to 7 // DONE
     )
 
     private val menuSiteID = listOf(
-            listOf("329416835"),
-            listOf("329086532"),
-            listOf("329086498"),
+            listOf("399211405"), // DONE
+            listOf("400031056."), // DONE
+            listOf("400031067"), // DONE
             listOf(
-                    "329785353",
-                    "329785122"
+                    "398322858", // DONE
+                    "399211121"
             ),
-            listOf("326923743"),
-            listOf("329086488"),
-            listOf("329086483"),
-            listOf("329086458"),
-            listOf("329086467")
+            listOf("400031218"), // DONE
+            listOf(
+                    "399063247", // DONE
+                    "400031223"
+            ),
+            listOf("400031381"), // DONE
+            listOf("400031438") // DONE
     )
 
     private data class DayOfWeek(private val day: Int) {
@@ -133,7 +134,7 @@ object Opp {
             var counter = 0
             for (id in menuSiteID) {
                 val FILE_URL = "https://www.hse.ru/mirror/pubs/share/$id"
-                val FILE_PATH = "src\\main\\resources\\Menu${++counter}.pdf"
+                val FILE_PATH = "src\\main\\resources\\cache\\Menu${++counter}.pdf"
                 val url = URL(FILE_URL)
                 val file = File(FILE_PATH)
                 file.createNewFile()

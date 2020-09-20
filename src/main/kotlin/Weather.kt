@@ -9,7 +9,7 @@ class Weather {
     companion object {
         @Throws(IOException::class)
         fun getWeather(message: String, model: Model): String {
-            val url = URL("")
+            val url = URL("Your url for api")
 
             val input = Scanner(url.content as InputStream)
             var result = ""

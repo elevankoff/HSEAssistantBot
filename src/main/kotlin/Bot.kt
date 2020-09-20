@@ -27,7 +27,6 @@ class Bot : TelegramLongPollingBot() {
                 State.TYPING_MENUIMAGE -> ProcessStates.sendImage(message, this)
                 else -> when (message.text) {
                     "/help" -> ProcessCommands.help(message, this)
-                    "/id" -> ProcessCommands.id(message, this)
                     "/timetable" -> ProcessCommands.timetable(message, this)
                     "/menusite" -> ProcessCommands.menuSite(message, this)
                     "/menupdf" -> ProcessCommands.menuPDF(message, this)

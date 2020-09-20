@@ -9,7 +9,6 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.Keyboard
 object Buttons {
     val listOfCommands = listOf(
             "/help",
-            "/id",
             "/timetable",
             "/menusite",
             "/menupdf",
@@ -25,8 +24,7 @@ object Buttons {
             "Большой Трехсвятительский переулок, дом 3",
             "Малый Трехсвятительский переулок, дом 8/2, стр. 1",
             "Хитровский переулок, дом 2/8, стр. 5",
-            "Шаболовка, дом 28/11, стр.2",
-            "Шаболовка, дом 26, стр. 4"
+            "Шаболовка, дом 28/11, стр.2"
     )
 
     private fun addRow(keyboardRowList: MutableList<KeyboardRow>, line: String) {

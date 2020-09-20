@@ -10,7 +10,6 @@ object ProcessCommands {
     fun help(message: Message, bot: Bot) {
         SendMessage.sendMessage(message,
                 "Доступны следующие команды: \n" +
-                        "/id - Получить ID студента по ФИО \n" +
                         "/timetable - Расписание по ФИО и дню \n" +
                         "/menusite - Страница с меню по адресу \n" +
                         "/menupdf - PDF с меню по адресу \n" +

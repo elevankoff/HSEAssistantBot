@@ -99,15 +99,12 @@ object Opp {
 
         for (lesson in array) {
             lesson as JSONObject
-
-            println(getId(student.fullName))
-            println(date.date);
-
             resultOfGetter.append("Тип занятия: ${lesson.getString("kindOfWork")} \n" +
                         "Предмет: ${lesson.getString("discipline")} \n" +
                         "Аудитория: ${lesson.getString("auditorium")} \n" +
                         "Начало: ${lesson.getString("beginLesson")} \n" +
                         "Конец: ${lesson.getString("endLesson")} \n" +
+                    (if (!lesson.isNull("url1")) "Ссылка: ${lesson.getString("url1")} \n" else "") +
                         "Лектор: ${lesson.getString("lecturer")} \n" +
                         "Здание: ${lesson.getString("building")} \n \n"
                 )

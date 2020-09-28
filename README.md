@@ -10,7 +10,7 @@ You should create a new bot and get your token with help of @BotFather. Write yo
 
 - Timetable (using [RUZ](https://ruz.hse.ru/) API)
 - Canteen menus (JPG, PDF, link)
-- Weather (now only for Moscow)
+- Weather (now only for Moscow, using [OpenWeather API](https://openweathermap.org/api/one-call-api?gclid=Cj0KCQjwk8b7BRCaARIsAARRTL7879_eQTtjalbfsX-5vDEBc3gMEPHf2poLUnsGR1l6pFiZZpt4aVQaAtzpEALw_wcB))
 
 ## Contributing
 If you have any suggestions, here's my e-mail and Telegram: e.levankoff@yandex.ru @YegorLevankov
